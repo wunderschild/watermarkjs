@@ -1,16 +1,18 @@
 {
   "name": "@wunderschild/watermarkjs",
-  "version": "2.1.2",
+  "version": "2.1.2b",
   "description": "Watermarked images in the browser",
   "main": "dist/watermark.js",
+  "types": "types/index.d.ts",
   "scripts": {
     "test": "jest",
     "bundle": "webpack",
     "sync": "browser-sync start --server examples --index index.html --files 'examples/**/*.css, examples/**/*.html, examples/**/*.js' --port 4000",
     "copy-dist": "cp dist/* examples/scripts",
     "watch": "watch \"npm run build\" lib",
-    "build": "npm run bundle && npm run copy-dist && notify -t 'npm run build' -m 'complete'",
-    "dev": "npm run watch & npm run sync"
+    "build": "npm run bundle && npm run types:generate && npm run copy-dist && notify -t 'npm run build' -m 'complete'",
+    "dev": "npm run watch & npm run sync",
+    "types:generate": "tsc -p ."
   },
   "repository": {
     "type": "git",
@@ -41,13 +43,19 @@
     "browser-sync": "^2.26.7",
     "browserify": "^16.5.0",
     "browserify-derequire": "^1.0.1",
+    "copyfiles": "^2.4.1",
     "jest-cli": "^24.9.0",
     "node-notifier-cli": "^1.1.2",
+    "typescript": "^4.8.2",
     "uglifyjs-webpack-plugin": "^2.2.0",
     "watch": "^1.0.2",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.10"
   },
+  "files": [
+    "dist/",
+    "types/"
+  ],
   "jest": {
     "setupFiles": [
       "<rootDir>/jestEnvironment.js"

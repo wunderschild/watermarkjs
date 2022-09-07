@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "lib": [
+      "DOM",
+      "DOM.Iterable",
+      "ESNext"
+    ],
+    "target": "ES6",
+    "allowJs": true,
+    "moduleResolution": "Node",
+    "checkJs": true,
+    "emitDeclarationOnly": true,
+    "declaration": true,
+    "outDir": "types"
+  },
+  "exclude": [
+    "**/__tests__/*"
+  ],
+  "include": [
+    "lib/**/*"
+  ]
+}
