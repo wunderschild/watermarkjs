@@ -1,6 +1,6 @@
 {
-  "name": "watermarkjs",
-  "version": "2.1.1",
+  "name": "@wunderschild/watermarkjs",
+  "version": "2.1.2",
   "description": "Watermarked images in the browser",
   "main": "dist/watermark.js",
   "scripts": {
@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:brianium/watermarkjs.git"
+    "url": "git@github.com:wunderschild/watermarkjs.git"
   },
   "keywords": [
     "canvas",
@@ -22,12 +22,16 @@
     "image",
     "file"
   ],
-  "author": "Brian Scaturro <scaturrob@gmail.com>",
+  "author": "Schwarzthal Tech",
+  "contributors": [
+    "Karl F. Meinkopf <k.meinkopf@gmail.com>",
+    "Brian Scaturro <scaturrob@gmail.com>"
+  ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/brianium/watermarkjs/issues"
+    "url": "https://github.com/wunderschild/watermarkjs/issues"
   },
-  "homepage": "https://github.com/brianium/watermarkjs",
+  "homepage": "https://github.com/wunderschild/watermarkjs",
   "devDependencies": {
     "@babel/core": "^7.7.2",
     "@babel/preset-env": "^7.7.1",
