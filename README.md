@@ -1,4 +1,6 @@
-# watermark.js
+# @wunderschild/watermarkjs 
+![npm (scoped)](https://img.shields.io/npm/v/@wunderschild/watermarkjs?color=%23cb0000%20&style=for-the-badge) 
+![npm type definitions](https://img.shields.io/npm/types/@wunderschild/watermarkjs?style=for-the-badge)
 
 > This library is the continuation of archived [watermarkjs](https://github.com/brianium/watermarkjs) library.
 
@@ -24,10 +26,10 @@ watermark.js is available via npm and bower:
 
 ```
 # install via npm
-$ npm install watermarkjs
+$ npm install @wunderschild/watermarkjs
 
-# install via bower
-$ bower install watermarkjs
+# install via yarn
+$ yarn add @wunderschild/watermarkjs
 ```
 
 ## Usage
